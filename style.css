@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: #857f7f;
+    text-shadow: 2px 3px 3px #5f4141;
+}
+
+form{
+    display: flex;
+    justify-content: center;align-items: center;
+    margin-bottom: 2rem;
+
+
+}
+
+#input-text{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #000;
+    width: 60%;
+
+}
+#search-btn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 0 0 5px 1px #000;
+    cursor: pointer;
+
+}
+
+#search-btn:hover{
+    background-color: blue;
+    box-shadow: 10px 10px 5px 1px #857f7f;
+    color: white;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.search-result{
+    box-shadow: 0 0 5px 1px #747070;
+    width: 30%;
+    height: 100%;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.search-result img{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    transition: opacity 0.2 ease-in-out;
+
+}
+
+.search-result:hover{
+    opacity: 0.6;
+}
+
+.search-result a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #857f7f;
+
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+
+}
+
+.theme{
+    padding-left: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background-color: yellow;
+    border: none;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    
+}
+
+.theme:hover{
+    box-shadow: 10px 10px 5px 1px #857f7f;
+
+    background-color: rgb(68, 205, 74);
+    color: rgb(30, 28, 28);
+}
+
+.show-more
+{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 0 0 5px 1px #000;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+    background-color: blue;
+    color: white;
+    display: none;
+}
+
+.show-more:hover{
+    box-shadow: 10px 10px 5px 1px #857f7f;
+
+    background-color: aliceblue;
+    color: rgb(30, 28, 28);
+}
+
+@media screen and (max-width: 768px){
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .search-result{
+        width: 100%;
+    }
+}
