@@ -59,10 +59,12 @@ show.addEventListener("click",()=>{
 theme.addEventListener("click",()=>{
     if(body.style.backgroundColor==="white"){
     body.style.backgroundColor="black"
+        theme.style.backgroundColor="white"
     
     }
 else{
 body.style.backgroundColor="white"
+    theme.style.backgroundColor="yellow"
 
 }
 })
